@@ -1,0 +1,351 @@
+
+.containra{
+    display: flex;
+}
+.brand{
+    align-items: left;
+    margin-right: 1050px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+display: flex;
+position: absolute;
+
+}
+.location{
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    
+}
+.p{
+    display: inline-block; 
+    margin: 0; 
+            
+           
+}
+.pj{
+    text-align: center;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.navbar-nav me-auto{
+    color: white;
+}
+
+.cha{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 700px;
+    margin:auto;
+   
+}
+
+.tiep{
+    display:flex;
+    width: 1000px;
+}
+.hn{
+    background-color: #f4f4f4;
+}
+.my-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white; 
+    background-color: #212529; 
+    border: 2px solid black; 
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
+    transition: color 0.3s ease, border-color 0.3s ease; 
+}
+.my-button:hover {
+    color: black; 
+    border-color: white; 
+}
+.my-button:focus {
+    outline: none; 
+}
+
+.my-button:hover::before {
+    content: ""; 
+    position: absolute;
+    top: -5px; 
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid white; 
+    border-radius: 5px;
+    z-index: -4; 
+}
+
+.contain h1{
+    position: absolute;
+    font-size: 70px;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    z-index: 1;
+}
+.contain{
+    position: relative;
+    padding-left: 40px;
+
+}
+
+.contain img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+.contain p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 260px;
+    position: absolute;
+    z-index: -2;
+}
+
+
+.my-button1 {
+    padding: 18px 36px 18px 36px;
+    font-size: auto;
+    font-weight: bold;
+    color: white; 
+    background-color: #333; 
+    border: 2px solid #333; 
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    background-size: 200% 100%; 
+    background-position: left bottom; 
+    position: absolute;
+    z-index: 3;
+    margin-top: 250px;
+}
+
+.my-button1:hover {
+    background-color: white; 
+    color: #333; 
+    border-color: #333; 
+    background-position: right bottom; 
+}
+.undercontain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Kiểu mặc định của nút */
+.button2 {
+    background-color: transparent;
+    color: black;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Kiểu khi đưa chuột vào nút */
+.button2:hover {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+/* Thiết lập chung cho dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Menu dropdown ẩn đi mặc định */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+/* Định dạng cho các liên kết trong dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s;
+    border-radius: 8px;
+}
+
+/* Đổi màu nền khi đưa chuột vào các mục trong menu */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Hiển thị menu khi di chuột vào dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container1{
+    display: flex;
+    justify-content: flex-end; /* Đưa thanh tìm kiếm sang phải */
+    padding: 10px;
+}
+.search-box {
+    display: flex;
+    align-items:center;
+    
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Viền trong suốt */
+    border-radius: 20px; /* Bo tròn góc */
+    padding: 5px 15px;
+    width: 150px; /* Độ rộng khung tìm kiếm */
+    
+    background: rgba(255, 255, 255, 0.3); /* Nền trong suốt */
+    position: relative;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px 10px 5px 0; /* Khoảng cách bên phải cho icon */
+    background: transparent; /* Nền trong suốt cho ô nhập liệu */
+    color: #000; /* Màu chữ */
+}
+
+.search-box input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Màu chữ mờ cho placeholder */
+}
+
+.search-box .search-icon {
+    position: absolute;
+    right: 35px; /* Đặt icon ở bên phải khung */
+    cursor: pointer;
+    opacity: 0.6; /* Độ trong suốt của icon */
+    bottom:31px;
+}
+
+.search-box .search-icon img {
+    width: auto;
+    height: 18px;
+}
+.img1{
+    margin-top: 500px;
+    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/* Thiết lập cơ bản cho link */
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Tạo hiệu ứng gạch chân bằng ::after */
+  .hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Độ dày gạch chân */
+    background-color: black; /* Màu gạch chân */
+    transition: width 0.3s ease; /* Hiệu ứng chuyển động */
+  }
+  
+  /* Khi di chuột vào, mở rộng gạch chân */
+  .hover-underline:hover::after {
+    width: 100%;
+  }
+  .ft1{
+    display: flex;
+    gap: 180px;
+    color:#f0f0f0;
+    margin-top: 466.5px;
+    margin-left: 20px;
+    
+    
+  }
+  .ft1 ul{
+    margin: 0;
+    padding: 0;
+    color: #cfceceeb;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .ft1 ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .ft1 a{
+    text-decoration: none;
+    color: #cfceceeb;
+  }
+ .login-icon img {
+    width: auto;
+    height: 36px;
+    z-index: 4;
+    margin-left: 160px;
+    margin-top: 3px;
+}
+
+.last{
+    display: flex;
+}
+.social-media {
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-media img {
+    width: 40px; /* Kích thước hình ảnh */
+    height: 40px; /* Bảo đảm hình vuông */
+    border-radius: 50%; /* Làm tròn hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border: 2px solid #fff; /* Thêm viền trắng (tuỳ chọn) */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.2); /* Phóng to khi hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Hiệu ứng ánh sáng khi hover */
+  }
+  /* Màn hình lớn (Desktop) */
+body {
+    font-size: 18px;
+  }
+  
+  /* Màn hình vừa (Tablet) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Màn hình nhỏ (Điện thoại) */
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  }

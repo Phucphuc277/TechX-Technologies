@@ -1,0 +1,54 @@
+/* Căn chỉnh chính */
+.main-container {
+    display: flex;
+    justify-content: center; /* Căn giữa hai phần */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 30px; /* Khoảng cách giữa form và ảnh */
+    padding: 20px;
+}
+
+/* Form */
+.form-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; /* Độ rộng tối đa của form */
+    width: 100%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Ảnh */
+.image-container img {
+    max-width: 400px; /* Đảm bảo ảnh không quá lớn */
+    height: auto;
+    border-radius: 10px; /* Tùy chọn để bo góc ảnh */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Chuyển sang dọc trên màn hình nhỏ */
+    }
+}

@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <link rel="stylesheet" href="bai1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Tạo hồ sơ cá nhân</h2>
+            <input type="text" id="name" placeholder="Tên">
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" id="phone" placeholder="Số điện thoại">
+            <input type="text" id="address" placeholder="Địa chỉ">
+            <input type="url" id="avatar" placeholder="URL ảnh đại diện">
+            <button onclick="saveProfile()">Lưu hồ sơ</button>
+        </div>
+        
+        <div class="profile-section">
+            <h2>Tạo hồ sơ cá nhân</h2>
+            <div class="profile-card">
+                <img id="profileAvatar" src="" alt="Ảnh đại diện">
+                <p><strong>Tên:</strong> <span id="profileName"></span></p>
+                <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+                <p><strong>Số điện thoại:</strong> <span id="profilePhone"></span></p>
+                <p><strong>Địa chỉ:</strong> <span id="profileAddress"></span></p>
+                <button onclick="editProfile()">Chỉnh sửa hồ sơ</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="bai1.js"></script>
+</body>
+</html>

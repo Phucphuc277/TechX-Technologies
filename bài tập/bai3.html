@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="myForm">
+        <label>Username: <input type="text" id="username"></label>
+        <div class="error" id="error-username"></div>
+        
+        <label>Email: <input type="email" id="email"></label>
+        <div class="error" id="error-email"></div>
+        
+        <label>Password: <input type="password" id="password"></label>
+        <div class="error" id="error-password"></div>
+        
+        <label>Phone Number: <input type="text" id="phone"></label>
+        <div class="error" id="error-phone"></div>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

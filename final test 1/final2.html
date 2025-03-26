@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final stop</title>
+    <link rel="stylesheet" href="final2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montaga&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="sidebar-menu" class="sidebar">
+        <div class="sidebar-header">
+            <img id="avatar" src="https://via.placeholder.com/50" alt="User Avatar">
+            <span id="username">Người dùng</span>
+            <button id="toggle-sidebar">!!!</button>
+        </div>
+        <div class="sidebar-content">
+            <div class="chatbot">
+                <img src="./image/chatbot-cartoon-smart-vector-intelligent-technology-agent-assistant_502617_wh860-removebg-preview.png" alt="Chatbot" style="
+                width: 40px;
+                height: 40px;" class="chatbot-image">
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Nhập tin nhắn...">
+                <button id="send-chat">Gửi</button>
+            </div>
+        </div>
+    </div>
+    <span id="username-display"></span>
+
+
+    <div class="contain">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./image/images.png" alt="Avatar Logo"
+                    style="width:40px; z-index:2; position: absolute; margin-left:20px; padding-top:15px;"
+                    class="rounded-pill">
+            </a>
+        </div>
+        <div class="undercontain">
+            <div class="dropdown">
+                <button class="button2">SHOP</button>
+                <div class="dropdown-content">
+                    <a href="./final3.html">MICE</a>
+                    <a href="">KEYBOARD AND CONSOLE</a>
+                    <a href="./wishlist.html">WISHLIST</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">DEALS</button>
+                <div class="dropdown-content">
+                    <a href="#">Current Offers</a>
+                    <a href="#">Gifts with Purchase</a>
+                    <a href="#">Save with Combos</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">DISCOVER</button>
+                <div class="dropdown-content">
+                    <a href="#">Sustainability</a>
+                    <a href="#">About Us
+                    </a>
+                    <a href="#">Ergo Series</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">MX Series
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Spaces & Solutions</a>
+                    <a href="#">Products
+                    </a>
+                    <a href="#">Software & Services</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">SUPPORT</button>
+                <div class="dropdown-content">
+                    <a href="#">For Individuals
+                    </a>
+                    <a href="#">For Business & Education
+                    </a>
+                    <a href="#">Software</a>
+                </div>
+
+            </div>
+           
+            <div class="container1">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search..." oninput="searchProducts()">
+                    <span class="search-icon">
+                        <img src="./image/download-removebg-preview.png" alt="Search Icon">
+                    </span>
+                    <ul id="suggestions" class="search-results"></ul> <!-- Thêm danh sách gợi ý -->
+                </div>
+            </div>
+            
+                  
+              
+
+        </div>
+        <div>
+            <h1>BÀN PHÍM</h1>
+            <img src="./image/keyboards-hero-desktop-2022-2.webp" alt="Lỗi">
+            <p style="z-index: 1; padding-top:100px;">Mua sắm bàn phím không dây<br> và có dây. Chọn từ loạt sản phẩm
+                cơ, công thái học,<br> thoải mái, nhỏ gọn, Bluetooth®, đa thiết bị và đa hệ điều hành.</p>
+            <button class="my-button1" style="
+    margin-top: 200px;">MUA NGAY</button>
+        </div>
+    </div>
+    </div>
+    <div class="img1">
+
+        <div class="img1-items">
+            <div class="img1-items1">
+                <img src="./image/keys-to-go-2-graphite-gallery-1.webp">
+            </div>
+            <div class="img1-items-content"  id="pop-icon-keys">
+                <strong>
+                    <a class="product-name" class="hover-underline"
+                        style="font-size:21px ; color: black; text-decoration: none; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                        href="">POP Icon Keys</a>
+                        <span class="wishlist-icon" data-product="POP Icon Keys">🤍</span>
+                </strong>
+                <p style="font-family:monospace">Bàn phím không dây<br> nhỏ gọn với thiết kế táo bạo <br>và các Phím
+                    thao tác có
+                    thể tùy chỉnh.</p>
+                <p style="font-family:monospace">1.499.000 ₫</p>
+                <button class="my-button1" style="
+    margin-top: 0px;" onclick="addToCart('POP Icon Keys', 1499000, './image/keys-to-go-2-graphite-gallery-1.webp', 'Đen');">MUA</button>
+            </div>
+        </div>
+
+        <div class="img1-items">
+            <div class="img1-items1">
+                <img src="./image/mx-key-s-for-mac-pale-grey-gallery-1-us.webp">
+            </div>
+            <div class="img1-items-content" id="mx-keys-mini">
+                <strong>
+                    <a class="product-name" class="hover-underline"
+                        style="font-size:21px ; color: black; text-decoration: none; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                        href="">MX Keys Mini</a>
+                        <span class="wishlist-icon" data-product="MX Keys Mini">🤍</span>
+                </strong>
+                <p style="font-family:monospace">Bàn phím máy tính bảng<br> mỏng, siêu di động có thể đi mọi nơi.</p>
+                <p style="font-family:monospace">2.290.000 ₫</p>
+                <button class="my-button1" style="
+    margin-top: 0px;" onclick="addToCart('MX Keys Mini', 2290000, './image/mx-key-s-for-mac-pale-grey-gallery-1-us.webp', 'Trắng');">MUA</button>
+            </div>
+        </div>
+        <div class="img1-items">
+            <div class="img1-items1">
+                <img src="./image/pop-icon-keys-rose-off-white-gallery-1-us.webp">
+            </div>
+            <div class="img1-items-content" id="k380-pink">
+                <strong>
+                    <a class="product-name" class="hover-underline"
+                        style="font-size:21px ; color: black; text-decoration: none; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                        href="">K380 Pink Bluetooth Keyboard</a>
+                        <span class="wishlist-icon" data-product="K380 Pink Bluetooth Keyboard">🤍</span>
+                </strong>
+                <p style="font-family:monospace">Thêm điểm nhấn cho bàn làm việc của<br> bạn với POP Icon Combo - bàn
+                    phím<br> và chuột không dây đầy<br> phong cách, nhỏ gọn và có thể tùy chỉnh.</p>
+                <p style="font-family:monospace">2.099.000 ₫</p>
+                <button class="my-button1" style="
+    margin-top: 0px;" onclick="addToCart('K380 Pink Bluetooth Keyboard', 2099000, './image/pop-icon-keys-rose-off-white-gallery-1-us.webp', 'Trắng Hồng');">MUA</button>
+            </div>
+        </div>
+    </div>
+    <div class="img1" style="margin-top: 200px;">
+
+        <div class="img1-items">
+            <div class="img1-items1">
+                <img src="./image/k950-graphite-gallery1-front-view-amr-us.webp">
+            </div>
+            <div class="img1-items-content" id="signature-k950">
+                <strong>
+                    <a class="product-name" class="hover-underline"
+                        style="font-size:21px ; color: black; text-decoration: none; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                        href="">Signature Slim Keyboard K950</a>
+                        <span class="wishlist-icon" data-product="Signature Slim Keyboard K950">🤍</span>
+                </strong>
+                <p style="font-family:monospace">Gõ trên mọi màn hình bằng bàn phím di động<br>nhất từ trước tới nay
+                    <br>của chúng tôi.
+                    thể tùy chỉnh.
+                </p>
+                <p style="font-family:monospace">1.499.000 ₫</p>
+                <button class="my-button1" style="
+    margin-top: 0px;" onclick="addToCart('Signature Slim Keyboard K950', 1499000, './image/k950-graphite-gallery1-front-view-amr-us.webp', 'Đen');">MUA</button>
+            </div>
+        </div>
+
+        <div class="img1-items">
+            <div class="img1-items1" id="mx-mechanical">
+                <img src="./image/mx-mechanical-mini-mini-keyboard-top-view-graphite-us.webp">
+            </div>
+            <div class="img1-items-content">
+                <strong>
+                    <a class="product-name" class="hover-underline"
+                        style="font-size:21px ; color: black; text-decoration: none; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                        href="">MX Mechanical</a>
+                        <span class="wishlist-icon" data-product="MX Mechanical">🤍</span>
+                </strong>
+                <p style="font-family:monospace">Bàn phím Hiệu suất<br> Không dây Phát sáng</p>
+                <p style="font-family:monospace">1.499.000 ₫</p>
+                <button class="my-button1" style="
+    margin-top: 0px;" onclick="addToCart('MX Mechanical', 1499000, './image/mx-mechanical-mini-mini-keyboard-top-view-graphite-us.webp', 'Đen');">MUA</button>
+            </div>
+        </div>
+        <div class="img1-items">
+            <div class="img1-items1" id="pebble-keys-k380s">
+                <img src="./image/k580-slim-multi-device-wireless-kb-front-gallery-rose-us.webp">
+            </div>
+            <div class="img1-items-content">
+                <strong>
+                    <a class="product-name" class="hover-underline"
+                        style="font-size:21px ; color: black; text-decoration: none; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                        href="">Pebble Keys 2 K380s</a>
+                        <span class="wishlist-icon" onclick="toggleWishlist('POP Icon Keys', './image/keys-to-go-2-graphite-gallery-1.webp', 1499000)">🤍</span>
+                </strong>
+                <p style="font-family:monospace">Bàn phím Bluetooth® mỏng, tối giản với<br> các phím có thể tùy chỉnh.
+                </p>
+                <p style="font-family:monospace">1.499.000 ₫</p>
+                <button class="my-button1" style="
+    margin-top: 0px;" onclick="addToCart('Pebble Keys 2 K380s', 1499000, './image/k580-slim-multi-device-wireless-kb-front-gallery-rose-us.webp', 'Hồng');">MUA</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <footer style="background-color: black;">
+            <div>
+                <strong>
+                    <div class="ft1">
+                        <div>
+                            <p style="margin-top: 50px; font-size:15px; font-family:Montaga;">GIỚI THIỆU</p>
+                            <ul>
+
+                                <li><a href="">Câu chuyện về Techx</a></li>
+                                <li><a href="">Nghề nghiệp</a></li>
+                                <li><a href="">Nhà đầu tư</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Báo chí</a></li>
+                                <li><a href="">Liên hệ với chúng tôi</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="margin-top: 50px; font-size:15px; font-family:Montaga;">GIÁ TRỊ</p>
+                            <ul>
+                                <li><a href="">Tác động Xã hội</a></li>
+                                <li><a href="">Tính bền vững</a></li>
+                                <li><a href="">Tái chế</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p style="margin-top: 50px; font-size:15px; font-family:Montaga;">KHÁCH HÀNG</p>
+                            <ul>
+                                <li><a href="#">Tùy chọn email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </strong>
+            </div>
+            <div class="social-media" style="margin-left: 900px;">
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <img src="./image/tải xuống (5).jpg" alt="Twitter">
+                </a>
+                <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+                    <img src="./image/images__3_-removebg-preview.png" alt="Facebook">
+                </a>
+                <a href="https://youtube.com/" target="_blank" aria-label="YouTube">
+                    <img src="./image/tải_xuống__2_-removebg-preview.png" alt="YouTube">
+                </a>
+            </div>
+        </footer>
+    </div>
+<!-- Biểu tượng giỏ hàng -->
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- Cửa sổ giỏ hàng -->
+<div id="cart-container" class="cart-container">
+    <div class="cart-header">
+        <span id="cart-message">0 items added to cart</span>
+        <button class="close-cart" onclick="toggleCart()">✖</button>
+    </div>
+
+    <ul id="cart-items"></ul>
+
+    <!-- Tổng tiền -->
+    <div class="cart-summary">
+        <p> <span id="cart-total">0₫</span></p>
+    </div>
+
+    <div class="cart-footer">
+        <button class="view-cart">VIEW CART (<span id="cart-count-footer">0</span>)</button>
+        <button class="checkout">CHECKOUT</button>
+    </div>
+</div>
+
+<script src="./final2.js"></script>
+
+</body>
+
+</html>

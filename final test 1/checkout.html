@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout TechX</h2>
+        <p>Fill the form below to complete your purchase!</p>
+
+        <div class="checkout-form">
+            <!-- BILLING ADDRESS -->
+            <div class="section">
+                <h3>1. BILLING ADDRESS</h3>
+                <label>First Name: <input type="text"></label>
+                <label>Last Name: <input type="text"></label>
+                <label>Email Address: <input type="email"></label>
+                <label>Phone: <input type="text"></label>
+                <label>Address: <input type="text"></label>
+                <label>City: <input type="text"></label>
+                <label>Zip Code: <input type="text"></label>
+                <label>Country: <select>
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>United Kingdom</option>
+                </select></label>
+            </div>
+
+            <!-- SHIPPING METHOD -->
+            <div class="section">
+                <h3>2. SHIPPING METHOD</h3>
+                <label>
+                    <input type="radio" name="shipping" id="freeShipping"> Free Shipping: 0đ
+                    <input type="text" id="shippingCode" placeholder="Enter code">
+                    <button id="applyShippingCode">Apply</button>
+                    <p id="shippingError" class="error-message"></p>
+                </label>
+                <label>
+                    <input type="radio" name="shipping" id="emsShipping" checked> EMS (Express Mail Service): 56.000đ
+                </label>
+            </div>
+            
+
+            <!-- PAYMENT METHOD -->
+            <div class="section">
+                <h3>3. PAYMENT METHOD</h3>
+                <label><input type="radio" name="payment" checked> PayPal <img src="./image/paypal.png" class="payment-logo"></label>
+                <label><input type="radio" name="payment"> Credit Card 
+                    <img src="./image/mastercard.png" class="payment-logo">
+                    <img src="./image/jcb.png" class="payment-logo">
+                    <img src="./image/discover.png" class="payment-logo">
+                </label>
+            </div>
+
+<!-- REVIEW ORDER -->
+<div class="section">
+    <h3>4. REVIEW YOUR ORDER</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody id="order-items">
+            <!-- Sản phẩm sẽ được thêm tự động ở đây -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Shipping</td>
+                <td id="shipping-cost">đ0</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Grand Total</strong></td>
+                <td><strong id="total">đ0</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <button id="place-order">PLACE ORDER NOW</button>
+</div>
+
+
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

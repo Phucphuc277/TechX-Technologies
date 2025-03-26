@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Hàng</title>
+    <link rel="stylesheet" href="bai4.css">
+    <script defer src="bai4.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nhà Hàng</div>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#menu">Thực Đơn</a></li>
+            <li><a href="#reservation">Đặt Bàn</a></li>
+        </ul>
+    </nav>
+    
+    <section id="reservation">
+        <h2>Đặt Bàn</h2>
+        <form id="reservation-form">
+            <input type="text" id="name" placeholder="Họ và Tên" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Số Điện Thoại" required>
+            <input type="datetime-local" id="datetime" required>
+            <button type="submit">Xác Nhận</button>
+        </form>
+    </section>
+
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Xác Nhận Đặt Bàn</h2>
+            <p id="modalText"></p>
+            <button id="confirmReservation">Xác Nhận</button>
+        </div>
+    </div>
+</body>
+</html>

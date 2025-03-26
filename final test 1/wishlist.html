@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+    <div class="contain">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="./image/images.png" alt="Avatar Logo"
+                    style="width:40px; z-index:2; position: absolute; margin-left:20px; padding-top:15px;"
+                    class="rounded-pill">
+            </a>
+        </div>
+        <div class="undercontain">
+            <div class="dropdown">
+                <button class="button2">SHOP</button>
+                <div class="dropdown-content">
+                    <a href="./final3.html" class="no-underline">MICE</a>
+                    <a href="./final2.html" class="no-underline">KEYBOARD AND CONSOLE</a>
+                    <a href="./wishlist.html">WISHLIST</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">DEALS</button>
+                <div class="dropdown-content">
+                    <a href="#" class="no-underline">Current Offers</a>
+                    <a href="#" class="no-underline">Gifts with Purchase</a>
+                    <a href="#" class="no-underline">Save with Combos</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">DISCOVER</button>
+                <div class="dropdown-content">
+                    <a href="#" class="no-underline">Sustainability</a>
+                    <a href="#" class="no-underline">About Us
+                    </a>
+                    <a href="#" class="no-underline">Ergo Series</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">MX Series
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" class="no-underline">Spaces & Solutions</a>
+                    <a href="#" class="no-underline">Products
+                    </a>
+                    <a href="#" class="no-underline">Software & Services</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="button2">SUPPORT</button>
+                <div class="dropdown-content">
+                    <a href="#" class="no-underline">For Individuals
+                    </a>
+                    <a href="#" class="no-underline">For Business & Education
+                    </a>
+                    <a href="#" class="no-underline">Software</a>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <span class="search-icon">
+                        <img src="./image/download-removebg-preview.png" alt="Search Icon">
+
+                    </span>
+                    <div class="user-info">
+                        <a href="./login.html">
+                            <span class="login-icon">
+                                <img src="./image/anhdaidien.png" alt="User Icon" style="
+    margin-left: 180px;">
+                            </span>
+                        </a>
+                        <span id="username-display" style="margin-left: 10px; font-weight: bold; color: black;"></span>
+                    </div>
+                    
+                    
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="wishlist-container">
+            <div class="wishlist-header">
+                <span class="heart">🖤</span>
+                <h1 style="margin-left: 100px;">Wishlist</h1>
+                
+            </div>
+            <hr>
+            <ul id="wishlist-items"></ul> <!-- Danh sách sản phẩm trong wishlist -->
+            <div class="product-count">Showing: <span id="product-count">0</span> products</div>
+        </div>
+        <script src="./wishlist.js"></script>
+</html>
